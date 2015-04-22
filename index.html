@@ -2,8 +2,49 @@
 <html>
 <head>
 	<title>Empty Bowls - Home</title>
+	<meta charset="utf-8">
 </head>
 <body>
+	<header>
+		<img src="img/logo.png" alt="empty bowls logo">
+		<h1>Empty Bowls</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html"		>Home</a></li>
+				<li><a href="involved.html"		>Be Involved</a></li>
+				<li><a href="supporters.html"	>Supporters</a></li>
+				<li><a href="about.html"		>About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div>
+		<img src="img/hero/may.jpg" alt="this month's events at empty bowls">
+	</div>
 
+	<div id="countdown">
+		
+	</div>
+
+	<h2>What is it?</h2>
+	<p>You can feed the less fortunate in New Zealand and help stomp out hunger in one easy step plus you get a one-of-a-kind ceramic bowl! With just a $20 donation you will become part of an international movement.</p>
+
+	<h2>How can I donate?</h2>
+	<p>You can donate through our <a href="supporters.html">generous supporters</a>, Wellington Potters Association , the Hill Street Market or from the DCM itself over the month of August. All funds go directly to Downtown Committee Ministry (DCM).</p>
+
+	<footer>
+		<p>Jake Ovenden Web Design - jake.dale@xtra.co.nz</p>
+		<p>&copy;JakeOvenden/EmptyBowls/YoobeeSchoolOfDesign/DCM</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	 <script type="text/javascript">
+   $("#countdown")
+   .countdown("2015/08/01", function(event) {
+    	$(this).text(
+    		event.strftime('Days to go %D')
+    	);});
+	</script>
 </body>
 </html>
