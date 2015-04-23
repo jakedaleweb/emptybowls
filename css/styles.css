@@ -2,76 +2,172 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-weight:100;
 	color:#404041;
+	padding:0 0.5em;
+	margin:0;
+	max-width:1200px;
+	margin:0 auto;
+	background-image:url('../img/symphony.png');
+	background-position: fixed;
 }
-
 header img{
 	float:left;
 	height:100px;
 	width:100px;
 }
-
 header h1{
-	padding-top:50px;
+	padding-top:1em;
+	padding-bottom:0.5em;
 }
-
 h2{
 	font-weight:300;
 	margin-bottom:0;
+	margin-top:0;
 }
-
-p{
-	margin-top:1px;
+h2:nth-of-type(2){
+	margin-top:1em;
 }
-
-ul{
+header ul{
 	text-align:center;
 	margin:0 auto;
-	padding:0 0 5px 0;
+	padding:0 0 0.5em 0;
 }
-
-ul li{
+ul{
+	margin:0;
+}
+header ul li{
 	display:inline;
 	list-style: none;
 }
-
+footer{
+	background-color:#689640;
+	color:white;
+	font-size:80%;
+	padding-bottom:0.5em;
+}
+footer p{
+	margin:0;
+	padding:0.5em 0.5em 0 0.5em;
+}
+footer a{
+	color:white;
+	text-decoration:none;
+}
+footer a:hover{
+	color:#e57d24;
+}
 header a{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 90%;
 	color:#404041;
-	padding:0 2px;
+	padding:0 0.2em;
 }
-
 header a:hover{
 	color:#e57d24;
 }
-
 body > div:nth-of-type(2){
 	text-align:center;
+	margin-top:1em;
 }
-
 .active{
 	color:#e57d24;
 }
-
-#hero{
+#hero, #map-canvas{
 	height:200px;
 	overflow:hidden;
 }
-
 #hero img{
 	width:100%;
-	margin-bottom:20px;
 }
-
 #countdown{
-	padding:10px 5px;
+	display:none;
+}
+#tens, #ones{
+	padding:0.2em 0.2em;
+	font-size:200%;
 	background-color:#e57d24; 
 	color:white;
+	margin-right:2px;
 }
-
 #content{
+	margin-top:1em;
 	background-color:#77b049;
 	color:white;
-	padding:5px;
+	padding:0.5em;
 }
+#content a, #map-canvas a{
+	color:#1b75bb;
+	text-decoration: none;
+}
+#content a:hover, #map-canvas a:hover{
+	color:#e57d24;
+}
+#content p{
+	margin-top:1px;
+	margin-bottom:0;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+@media all and (min-width: 700px) {
+	body{
+		padding:0 4em;
+	}
+	h2:nth-of-type(2){
+		margin-top:0;
+	}
+	#hero, #map-canvas{
+		height:300px;
+	}
+	#content{
+		padding-top:2em;
+		padding-bottom:2em;
+	}
+	#content div{
+		float: left;
+		width:49%;
+	}
+	#content div:nth-of-type(2){
+		float:right;
+	}
+	h1{
+		margin-bottom:0;
+	}
+	header a{
+		font-size:110%;
+		padding:0 1em;
+	}
+}
+@media all and (min-width: 1000px) {
+	body{
+		padding:0 10em;
+	}
+	#hero, #map-canvas{
+		height:400px;
+	}
+	#content{
+		font-size:120%;
+	}
+}
+@media all and (min-width: 1200px) {
+	#hero, #map-canvas{
+		height:500px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

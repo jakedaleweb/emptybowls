@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Empty Bowls - Be Involved</title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="empty bowls logo">
+		<h1>Empty Bowls</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" 		>Home</a></li>
+				<li><a href="involved.html"	class="active" >Be Involved</a></li>
+				<li><a href="supporters.html"	>Supporters</a></li>
+				<li><a href="about.html"		>About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="hero">
+		<img src="img/involved.jpg" alt="this month's events at empty bowls">
+	</div>
+
+	<span id="countdown"></span>
+
+	<div id="countdownclock"></div>
+
+	<div id="content" class="cf">
+		<div>
+			<h2>How can I help?</h2>
+			<ul>
+				<li>Making Soup Bowls.</li>
+				<li>Donating soup bowls you’ve already made.</li>
+				<li>Assisting at Stalls selling bowls over the month of August.</li>
+				<li>Providing ideas on how people and organisations can support Empty Bowls Wellington.</li>
+				<li>Help to market and promote this event with friends, family and work colleagues.</li>
+				<li>Support for the costs of packaging and printing.</li>
+			</ul>
+		</div>
+
+		<div>
+			<h2>Who can I contact?</h2>
+			<p>You can contact us at <b>ouremail@example.com</b> or by ringing person at <b>0271111111</b>.</p>
+		</div>
+	</div>
+
+	<footer>
+		<p><a href="#">Jake Ovenden Web Design - jake.dale@xtra.co.nz</a></p>
+		<p>&copy;JakeOvenden/EmptyBowls/YoobeeSchoolOfDesign/DCM</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script>
+   	$("#countdown").countdown("2015/08/01", function(event) {
+    	$(this).text(
+    		event.strftime('%D')
+    	);});
+	</script>
+	<script src="js/clockstyles.js"></script>
+</body>
+</html>

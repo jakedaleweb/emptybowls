@@ -25,31 +25,35 @@
 		<img src="img/hero/may.jpg" alt="this month's events at empty bowls">
 	</div>
 
-	<div>
-		<p> Days to go <span id="countdown"></span></p>
-	</div>
+	<span id="countdown"></span>
 
-	<div id="content">
-		<h2>What is it?</h2>
-		<p>You can feed the less fortunate in New Zealand and help stomp out hunger in one easy step plus you get a one-of-a-kind ceramic bowl! With just a $20 donation you will become part of an international movement.</p>
+	<div id="countdownclock"></div>
 
-		<h2>How can I donate?</h2>
-		<p>You can donate through our <a href="supporters.html">generous supporters</a>, Wellington Potters Association , the Hill Street Market or from the DCM itself over the month of August. All funds go directly to Downtown Committee Ministry (DCM).</p>
+	<div id="content" class="cf">
+		<div>
+			<h2>What is it?</h2>
+			<p>You can feed the less fortunate in New Zealand and help stomp out hunger in one easy step plus you get a one-of-a-kind ceramic bowl! With just a <a href="involved.html">$20 donation</a> you will become part of an international movement.</p>
 		</div>
 
+		<div>
+			<h2>How can I donate?</h2>
+			<p>You can support from the <b>1st of August</b> through our <a href="supporters.html">generous supporters</a>, Wellington Potters Association , the Hill Street Market or from the DCM itself over the month of August. All funds go directly to Downtown Committee Ministry (DCM).</p>
+		</div>
+	</div>
+
 	<footer>
-		<p>Jake Ovenden Web Design - jake.dale@xtra.co.nz</p>
+		<p><a href="#">Jake Ovenden Web Design - jake.dale@xtra.co.nz</a></p>
 		<p>&copy;JakeOvenden/EmptyBowls/YoobeeSchoolOfDesign/DCM</p>
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery.countdown.min.js"></script>
-	 <script type="text/javascript">
-   $("#countdown")
-   .countdown("2015/08/01", function(event) {
+	<script>
+   	$("#countdown").countdown("2015/08/01", function(event) {
     	$(this).text(
     		event.strftime('%D')
     	);});
 	</script>
+	<script src="js/clockstyles.js"></script>
 </body>
 </html>
