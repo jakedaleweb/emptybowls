@@ -1,19 +1,13 @@
 [
 	{
 		"name":"Kapai",
-		"link":"www.kapainewzealand.co.nz",
+		"link":"http://www.kapainewzealand.co.nz",
 		"lat":"-41.286701",
 		"lng":"174.77616"
 	},
 	{
 		"name":"Moore Wilson's",
-		"link":"moorewilsons.co.nz",
-		"lat":"-41.295881",
-		"lng":"174.780507"
-	},
-	{
-		"name":"Something else",
-		"link":"moorewilsons.co.nz",
+		"link":"http://www.moorewilsons.co.nz",
 		"lat":"-41.295881",
 		"lng":"174.780507"
 	}
