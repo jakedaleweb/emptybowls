@@ -19,7 +19,7 @@ function initialize() {
           zoom: 20
         }
         //add location to list
-        $('#supporters').append('<li>'+locations[i][0]+'</li>')
+        $('#supporters').append('<li><a href="'+locations[i][1]+'">'+locations[i][0]+'</a></li>')
         //create map
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
@@ -35,30 +35,14 @@ function initialize() {
           //fit map to bounds
           map.fitBounds(bounds);
 
-          //add event listener to makers
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          //when mouse over the marker
+          google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
             return function() {
+              //open windown with link to website
               infowindow.setContent('<a href="'+locations[i][1]+'">'+locations[i][0]+'</a>');
               infowindow.open(map, marker);
-              //change map center to the clicked marker
-              map.setCenter(locations[i][2]);
-              //zom in on selected marker
-              map.setZoom(19)
-              //if there isnt already a rest map button add one
-              if (!document.getElementById('resetMapButton')) {
-                var resetMapButton = document.createElement('div');
-                resetMapButton.innerHTML = "<button>Show All</button>";
-                resetMapButton.id = "resetMapButton";
-                map.controls[google.maps.ControlPosition.TOP].push(resetMapButton);
-              }
-              //when the rest button is pushed set the map to the bounds and delete the rest button
-              resetMapButton.addEventListener("click", function(){
-                map.fitBounds(bounds);
-                document.getElementById("resetMapButton").remove();
-              });
             }
-          })(marker, i));
-          
+          })(marker, i)); 
         }
       }); 
     },
