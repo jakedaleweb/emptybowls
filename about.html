@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Empty Bowls - About</title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="empty bowls logo">
+		<h1>Empty Bowls</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" 		>Home</a></li>
+				<li><a href="involved.html"		>Be Involved</a></li>
+				<li><a href="supporters.html" 	>Supporters</a></li>
+				<li><a href="about.html" 		class="active">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>About Us</h1>
+	<div id="hero"><img src="img/about.jpg" alt="two friends at a meeting"></div>
+
+	<span id="countdown"></span>
+
+	<div id="countdownclock"></div>
+
+	<div id="content" class="cf">
+		<div>
+			<h2>Inspiration</h2>
+			<p>The inspiration for Empty Bowls came about when a group of friends, concerned about the disadvantaged people around our Capital City chose to do more than just talk about their concerns. Good friends and neighbours Janet and Rebecca committed to seek out and find a Community Organisation that supported those in our community who were under priviledged.</p>
+		</div>
+
+		<div>
+			<h2>Getting Started</h2>
+			<p>A meeting with Stephanie McIntyre, at the Downtown Community Ministry in December 2014, identified that the DCM helped sustain over 850 clients around the Wellington region annually. A match was made and Empty Bowls 2015 was born! </p>
+		</div>	
+	</div>
+
+	<footer>
+		<p><a href="jakedaleweb.github.io/portfolio">Jake Ovenden Web Design - jake.dale@xtra.co.nz</a></p>
+		<p>&copy;JakeOvenden/EmptyBowls/YoobeeSchoolOfDesign/DCM</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script>
+   	$("#countdown").countdown("2015/08/01", function(event) {
+    	$(this).text(
+    		event.strftime('%D')
+    	);});
+	</script>
+	<script src="js/clockstyles.js"></script>
+</body>
+</html>

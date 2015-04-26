@@ -16,7 +16,9 @@ header img{
 }
 header h1{
 	padding-top:1em;
-	padding-bottom:0.5em;
+	padding-bottom:0.2em;
+	font-size:300%;
+	font-weight:300;
 }
 h2{
 	font-weight:300;
@@ -95,6 +97,9 @@ header a:hover{
 	background-color:#77b049;
 	color:white;
 	padding:0.5em;
+}
+#content li a{
+	color:inherit;
 }
 #content a, #map-canvas a{
 	color:#1b75bb;
