@@ -39,6 +39,16 @@ header ul li{
 	display:inline;
 	list-style: none;
 }
+.dropdown{
+	list-style:none;
+}
+.dropdown a {
+	color:#404041;
+	text-decoration: none;
+}
+.dropdown a:hover{
+	color:#e57d24;
+}
 footer{
 	background-color:#689640;
 	color:white;

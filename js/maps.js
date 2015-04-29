@@ -95,7 +95,6 @@ function initialise() {
     marker.setIcon(ICONS.SELECTED);
     marker.setZIndex(1000);
     //map.setZoom(12);
-    map.panTo(marker.getPosition());
     listItem.className = "active";
   }
 

@@ -13,9 +13,15 @@
 		<h1>Empty Bowls</h1>
 		<nav>
 			<ul>
-				<li><a href="index.html" class="active"	>Home</a></li>
+				<li><a href="index.html" class="active" 		>Home</a></li>
 				<li><a href="involved.html"		>Be Involved</a></li>
-				<li><a href="supporters.html"	>Supporters</a></li>
+				<li><a href="supporters.html" 	>Supporters</a>
+					<ul>
+						<li class="dropdown"><a href="supporters.html"		>Supporters</a></li>
+						<li class="dropdown"><a href="potters.html"		>Potters</a></li>
+						<li class="dropdown"><a href="charity.html"		>Charity</a></li>
+					</ul>
+				</li>
 				<li><a href="about.html"		>About</a></li>
 			</ul>
 		</nav>
@@ -48,6 +54,10 @@
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script>
+		$('nav > ul').dropotron();
+	</script>
 	<script src="js/jquery.countdown.min.js"></script>
 	<script>
    	$("#countdown").countdown("2015/08/01", function(event) {
