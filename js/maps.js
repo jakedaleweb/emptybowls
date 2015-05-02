@@ -72,11 +72,11 @@ function initialise() {
     markerCollection.push(marker);
 
     var listItem = document.createElement('li');
-    listItem.innerHTML = '<li><a href="'+locations.link+'">'+locations.name+'</a></li>';
+    listItem.innerHTML = '<li><a href="'+locations.link+'">'+locations.name+'<img src="img/supportingLogo/'+locations.img+'" alt="logo of supporting business"></a></li>';
     supportersList.appendChild(listItem);
 
     var infoWindow = new google.maps.InfoWindow({
-      'content': '<a href="'+locations.link+'">'+locations.name+'</a>'
+      'content': '<li><a href="'+locations.link+'">'+locations.name+'<img src="img/supportingLogo/'+locations.img+'" alt="logo of supporting business"></a></li>'
     });
 
     listItem.addEventListener("mouseover", function (evt) {

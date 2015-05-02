@@ -3,73 +3,85 @@
 		"name":"Moore Wilson's",
 		"link":"http://www.moorewilsons.co.nz",
 		"lat":"-41.295881",
-		"lng":"174.780507"
+		"lng":"174.780507",
+		"img":"moorewilsons.jpg"
 	},
 	{
 		"name":"Wellington Potters Association",
-		"link":"http://www.nzpotters.com/clubs/WellingtonPottersAssociation.cfm",
+		"link":"https://www.facebook.com/pages/Wellington-Potters-Association/213144062066063",
 		"lat":"-41.272248",
-		"lng":"174.774597"
+		"lng":"174.774597",
+		"img":"wpa.jpg"
 	},
 	{
 		"name":"Rex Morgan(Boulcott Street Bistro &amp; Winebar)",
 		"link":"http://www.boulcottstreetbistro.co.nz/",
 		"lat":"-41.286197",
-		"lng":"174.773885"
+		"lng":"174.773885",
+		"img":"rm.jpg"
 	},
 	{
 		"name":"Karaka Cafe",
 		"link":"http://www.wharewakaoponeke.co.nz/karaka-cafe/",
 		"lat":"-41.289312",
-		"lng":"174.77944"
+		"lng":"174.77944",
+		"img":"kcafe.jpg"
 	},
 	{
-		"name":"Gypsy Kitchen",
+		"name":"Gipsy Kitchen",
 		"link":"https://www.facebook.com/pages/Gipsy-Kitchen/166251323428395",
 		"lat":"-41.324924",
-		"lng":"174.821311"
+		"lng":"174.821311",
+		"img":"gipsy.jpg"
 	},
 	{
 		"name":"Kapai, Featherston St",
 		"link":"http://www.kapainewzealand.co.nz/",
 		"lat":"-41.2820163",
-		"lng":"174.7775136"
+		"lng":"174.7775136",
+		"img":"kapai.jpg"
 	},
 	{
 		"name":"Kapai, Cuba Mall",
 		"link":"http://www.kapainewzealand.co.nz/",
 		"lat":"-41.2925347",
-		"lng":"174.7759508"
+		"lng":"174.7759508",
+		"img":"kapai.jpg"
 	},
 	{
 		"name":"Kapai, Willis St",
 		"link":"http://www.kapainewzealand.co.nz/",
 		"lat":"-41.2867006",
-		"lng":"174.7761599"
+		"lng":"174.7761599",
+		"img":"kapai.jpg"
 	},
 	{
 		"name":"Plentiful Deli",
 		"link":"https://www.facebook.com/pages/Plentifull-Deli/101615329921420",
 		"lat":"-41.294367",
-		"lng":"174.785346"
+		"lng":"174.785346",
+		"img":"pdeli.png"
 	},
 	{
 		"name":"Little Peckish Cafe",
 		"link":"https://www.facebook.com/LittlePeckishCafe",
 		"lat":"-41.289271",
-		"lng":"174.774819"
+		"lng":"174.774819",
+		"img":"lp.jpg"
 	},
 	{
 		"name":"Yoobee School of Design",
 		"link":"http://www.yoobee.ac.nz/",
 		"lat":"-41.295005",
-		"lng":"174.78362"
+		"lng":"174.78362",
+		"img":"yoobee.jpg"
 	},
 	{
 		"name":"Manage My Property",
 		"link":"http://www.managemyproperty.co.nz/",
 		"lat":"-41.301046",
-		"lng":"174.779245"
+		"lng":"174.779245",
+		"img":"mmp.png"
 	}
 ]
 
