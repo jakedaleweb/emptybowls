@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Empty Bowls - Potters</title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bjqs.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="empty bowls logo">
+		<h1>Empty Bowls</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" 	>Home</a></li>
+				<li><a href="involved.html"	>Be Involved</a></li>
+				<li class='linkImposter active'>Supporters
+					<ul class="dropdownUl">
+						<li class="dropdownLi"><a href="supporters.html">Supporters</a></li>
+						<li class="dropdownLi"><a href="potters.html">Potters</a></li>
+						<li class="dropdownLi"><a href="charity.html">Charity</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Potters</h1>
+	<div id="hero">
+		<ul class="bjqs">
+			<li><img src="img/potters/blackboard.jpg" alt="tally for april of bowls made"></li>
+			<li><img src="img/potters/drying.jpg" alt="bowls drying"></li>
+			<li><img src="img/potters/group.jpg" alt="group of potters making bowls"></li>
+			<li><img src="img/potters/handbuilding.jpg" alt="potters making bowls"></li>
+			<li><img src="img/potters/mouse.jpg" alt="detail of mouse on bowl"></li>
+			<li><img src="img/potters/shelfbowls.jpg" alt="bowls on a shelf"></li>
+		</ul>
+	</div>
+
+	<span id="countdown"></span>
+
+	<div id="countdownclock"></div>
+
+	<div id="content" class="cf">
+		<div>
+			<h2>How your Empty Bowls are made</h2>
+			<p>Most of our handmade bowls for the Empty Bowls project will be made from 660 grams of Stoneware clay.The bowl making process begins with a ball of clay, which has been ‘wedged’ to remove any air-bubbles that can cause breakage during the process of making.A bowl can be Thrown – which is from a potter’s wheel or Hand-built – which is generally made with coils of clay.When a bowl is ‘Thrown’ it will need to be left for a day or two to harden and then turned upside down and trimmed.Trimming involves taking off excess clay and finishing the bowl off with a base.</p>
+			<p> Once finishing has been completed the hand-built and thrown bowls are left to dry.  All water needs to evaporate from the bowls as this can also cause breakage.The first firing is called a Bisque.  Which means it will now be a hard surface that is porous and ready to be painted orglazed.  At this stage the clay can no longer be reconstituted as clay.The final firing is a glaze firing which follows the application of glaze material to the bisqued body. The higher temperature will melt the glaze material and harden the ceramic body so that it can be used functionally as a soup bowl.The Empty Bowls pieces will generally be fired to a temperature to an excess of 1200 degrees Celsius and the glazes made to be food-safe.</p>
+		</div>
+		<div>
+			<h2>Get Involved in Pottery</h2>
+			<ul>
+				<li><b><a href="http://www.nzpotters.com/clubs/WellingtonPottersAssociation.cfm">Wellington Potters Association</a></b><br/>
+				130 Grant Road, Thorndon, Wellington 6011<br/>
+				04 473 3680<br/>
+				wellingtonpotters@gmx.com</li>
+				<li><b><a href="http://www.woolshedpotters.org.nz">Homestead Woolshed</a></b><br/>
+				Okowai Road, Porirua<br/>
+				022 631 2655<br/>
+				woolshedpotters@gmail.com</li>
+				<li><a href="http://www.otakipotteryclub.org"><b>Otaki Pottery Club</a></b><br/>
+				Otaki College, 233 Mill Road, Otaki, Kapiti<br/>
+				06 364 8245</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<p><a href="http://www.jakedaleweb.github.io/portfolio">Jake Ovenden Web Design - jake.dale@xtra.co.nz</a></p>
+		<p>&copy;JakeOvenden/EmptyBowls/YoobeeSchoolOfDesign/DCM</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script>
+		$('nav > ul').dropotron();
+	</script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script>
+   	$("#countdown").countdown("2015/08/01", function(event) {
+    	$(this).text(
+    		event.strftime('%D')
+    	);});
+	</script>
+	<script src="js/clockstyles.js"></script>
+	<script src="js/slider.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		$('#hero').bjqs({
+			height : 800,
+			width : 1500,
+			responsive : true,
+			// animation values
+			animtype : 'fade', // accepts 'fade' or 'slide'
+			animduration : 450, // how fast the animation are
+			animspeed : 4000, // the delay between each slide
+			automatic : true // automatic
+		});
+	});
+	</script>
+</body>
+</html>

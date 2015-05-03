@@ -56,14 +56,14 @@ footer a{
 footer a:hover{
 	color:#e57d24;
 }
-header a, .linkImposter{
+header a, .linkImposter, #hero a{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 90%;
 	color:#404041;
 	padding:0 0.2em;
 }
-header a:hover{
+header a:hover, #hero a{
 	color:#e57d24;
 }
 #countdownclock{
@@ -80,6 +80,9 @@ header a:hover{
 }
 #hero img{
 	width:100%;
+}
+#hero a{
+	background-color:white;
 }
 #map-canvas img{
 	display:block;
@@ -105,7 +108,7 @@ header a:hover{
 	color:inherit;
 }
 #content a, #map-canvas a{
-	color:#1b75bb;
+	color:#3498db;
 	text-decoration: none;
 }
 #content a:hover, #map-canvas a:hover{
@@ -142,6 +145,16 @@ header a:hover{
 }
 .cf:after {
     clear: both;
+}
+.banner { 
+	position: relative; 
+	overflow: hidden; 
+}
+.banner li { 
+	list-style: none; 
+}
+.banner ul li { 
+	float: left; 
 }
 @media all and (min-width: 700px) {
 	body{
